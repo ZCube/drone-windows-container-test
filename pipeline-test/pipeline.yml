@@ -1,0 +1,15 @@
+workspace:
+  base: c:\go
+  path: src/github.com/drone/envsubst
+
+clone:
+  git:
+    image: some_docker
+    depth: 50
+
+pipeline:
+  build:
+    image: some_docker
+    commands:
+      - dir
+      - ls
