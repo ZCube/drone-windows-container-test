@@ -1,4 +1,5 @@
 # test.bat
+~~~
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>call test.bat
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>pipec exec
 proc "pipeline_clone_0" started
@@ -7,8 +8,9 @@ error: unable to write symref for HEAD: Permission denied
 exit status 1
 proc "pipeline_clone_0" exited with status 1
 pipeline_clone_0 : exit code 1
-
+~~~
 # "pipeline_default:c:\\go" remove volumes from pipeline.json manually
+~~~
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>pipec exec
 proc "pipeline_clone_0" started
 + git init
@@ -23,8 +25,9 @@ From https://github.com/drone/envsubst
 exit status 66
 proc "pipeline_clone_0" exited with status 1
 pipeline_clone_0 : exit code 1
-
+~~~
 # change drone-git image to bypass some_drone_git -> some_docker 
+~~~
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>call test.bat
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>pipec exec
 proc "pipeline_clone_0" started
@@ -49,3 +52,4 @@ A subdirectory or file c:\root already exists.
 operable program or batch file.
 proc "pipeline_step_0" exited with status 0
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>
+~~~
