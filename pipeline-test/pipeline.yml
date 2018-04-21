@@ -4,7 +4,7 @@ workspace:
 
 clone:
   git:
-    image: some_docker
+    image: some_drone_git
     depth: 50
 
 pipeline:
