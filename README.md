@@ -1,3 +1,10 @@
+* Run
+build-dockers.bat
+cd pipeline-test
+test.bat
+
+* Result
+~~~
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>go install github.com/cncd/pipeline/pipec
 
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>pipec compile --system-arch windows/amd64
@@ -32,3 +39,4 @@ Microsoft Windows [Version 10.0.14393]
 
 proc "pipeline_step_0" exited with status 0
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>
+~~~
