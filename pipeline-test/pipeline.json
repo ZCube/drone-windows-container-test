@@ -8,7 +8,7 @@
           "name": "pipeline_clone_0",
           "alias": "git",
           "image": "some_drone_git:latest",
-          "working_dir": "c:\\go/src/github.com/drone/envsubst",
+          "working_dir": "c:/test/src/github.com/drone/envsubst",
           "environment": {
             "CI": "drone",
             "CI_BUILD_CREATED": "1486119586",
@@ -30,7 +30,7 @@
             "CI_SYSTEM_ARCH": "windows/amd64",
             "CI_SYSTEM_LINK": "https://github.com/cncd/pipec",
             "CI_SYSTEM_NAME": "pipec",
-            "CI_WORKSPACE": "c:\\go/src/github.com/drone/envsubst",
+            "CI_WORKSPACE": "c:/test/src/github.com/drone/envsubst",
             "DRONE": "true",
             "DRONE_ARCH": "linux/amd64",
             "DRONE_BRANCH": "master",
@@ -52,11 +52,11 @@
             "DRONE_REPO_NAME": "envsubst",
             "DRONE_REPO_OWNER": "drone",
             "DRONE_REPO_SCM": "git",
-            "DRONE_WORKSPACE": "c:\\go/src/github.com/drone/envsubst",
+            "DRONE_WORKSPACE": "c:/test/src/github.com/drone/envsubst",
             "PLUGIN_DEPTH": "50"
           },
           "volumes": [
-            "pipeline_default:c:\\go"
+            "pipeline_default:c:/test"
           ],
           "networks": [
             {
@@ -79,7 +79,7 @@
           "name": "pipeline_step_0",
           "alias": "build",
           "image": "some_docker:latest",
-          "working_dir": "c:\\go/src/github.com/drone/envsubst",
+          "working_dir": "c:/test/src/github.com/drone/envsubst",
           "environment": {
             "CI": "drone",
             "CI_BUILD_CREATED": "1486119586",
@@ -97,12 +97,12 @@
             "CI_REPO_LINK": "https://github.com/drone/envsubst",
             "CI_REPO_NAME": "drone/envsubst",
             "CI_REPO_REMOTE": "https://github.com/drone/envsubst.git",
-            "CI_SCRIPT": "CiRFcnJvckFjdGlvblByZWZlcmVuY2UgPSAnU3RvcCc7CiZjbWQgL2MgIm1rZGlyIGM6XHJvb3QiOwppZiAoJEVudjpDSV9ORVRSQ19NQUNISU5FKSB7CiRuZXRyYz1bc3RyaW5nXTo6Rm9ybWF0KCJ7MH1cX25ldHJjIiwkRW52OkhPTUUpOwoibWFjaGluZSAkRW52OkNJX05FVFJDX01BQ0hJTkUiID4+ICRuZXRyYzsKImxvZ2luICRFbnY6Q0lfTkVUUkNfVVNFUk5BTUUiID4+ICRuZXRyYzsKInBhc3N3b3JkICRFbnY6Q0lfTkVUUkNfUEFTU1dPUkQiID4+ICRuZXRyYzsKfTsKW0Vudmlyb25tZW50XTo6U2V0RW52aXJvbm1lbnRWYXJpYWJsZSgiQ0lfTkVUUkNfUEFTU1dPUkQiLCRudWxsKTsKW0Vudmlyb25tZW50XTo6U2V0RW52aXJvbm1lbnRWYXJpYWJsZSgiQ0lfU0NSSVBUIiwkbnVsbCk7CltFbnZpcm9ubWVudF06OlNldEVudmlyb25tZW50VmFyaWFibGUoIkRST05FX05FVFJDX1VTRVJOQU1FIiwkbnVsbCk7CltFbnZpcm9ubWVudF06OlNldEVudmlyb25tZW50VmFyaWFibGUoIkRST05FX05FVFJDX1BBU1NXT1JEIiwkbnVsbCkKCldyaXRlLU91dHB1dCAoJysgImRpciInKTsKJmNtZCAvYyAiZGlyIjsKCldyaXRlLU91dHB1dCAoJysgImxzIicpOwomY21kIC9jICJscyI7Cgo=",
+            "CI_SCRIPT": "CkBJZiBOb3QgRXhpc3QgIiVIT01FJSIgbWtkaXIgIiVIT01FJSIgCkBJRiBOb3QgWyVDSV9ORVRSQ19NQUNISU5FJV0gPT0gW10gZWNobyAibWFjaGluZSAlQ0lfTkVUUkNfTUFDSElORSUiID4+ICVIT01FJVxfbmV0cmMgIApASUYgTm90IFslQ0lfTkVUUkNfTUFDSElORSVdID09IFtdIGVjaG8gImxvZ2luICVDSV9ORVRSQ19VU0VSTkFNRSUiID4+ICVIT01FJVxfbmV0cmMgIApASUYgTm90IFslQ0lfTkVUUkNfTUFDSElORSVdID09IFtdIGVjaG8gInBhc3N3b3JkICVDSV9ORVRSQ19QQVNTV09SRCUiID4+ICVIT01FJVxfbmV0cmMgIApAc2V0ICVDSV9ORVRSQ19QQVNTV09SRCU9ICAKQHNldCAlQ0lfU0NSSVBUJT0gIApAc2V0ICVEUk9ORV9ORVRSQ19VU0VSTkFNRSU9ICAKQHNldCAlRFJPTkVfTkVUUkNfUEFTU1dPUkQlPSAgCkBlY2hvICVDRCUKCkBlY2hvICcrICJkaXIgL2FsIGM6XFwiJwpAZGlyIC9hbCBjOlwKQGlmIG5vdCAlRVJST1JMRVZFTCUgMCBleGl0IC9iICVFUlJPUkxFVkVMJQoKQGVjaG8gZW5kCg==",
             "CI_SYSTEM": "pipec",
             "CI_SYSTEM_ARCH": "windows/amd64",
             "CI_SYSTEM_LINK": "https://github.com/cncd/pipec",
             "CI_SYSTEM_NAME": "pipec",
-            "CI_WORKSPACE": "c:\\go/src/github.com/drone/envsubst",
+            "CI_WORKSPACE": "c:/test/src/github.com/drone/envsubst",
             "DRONE": "true",
             "DRONE_ARCH": "linux/amd64",
             "DRONE_BRANCH": "master",
@@ -124,21 +124,19 @@
             "DRONE_REPO_NAME": "envsubst",
             "DRONE_REPO_OWNER": "drone",
             "DRONE_REPO_SCM": "git",
-            "DRONE_WORKSPACE": "c:\\go/src/github.com/drone/envsubst",
-            "HOME": "c:\root",
+            "DRONE_WORKSPACE": "c:/test/src/github.com/drone/envsubst",
+            "HOME": "c:\\root",
             "SHELL": "cmd.exe"
           },
           "entrypoint": [
-            "powershell",
-            "-noprofile",
-            "-noninteractive",
-            "-command"
+            "cmd",
+            "/c"
           ],
           "command": [
-            "[System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($Env:CI_SCRIPT)) | iex"
+            "powershell [System.Text.Encoding]::UTF8.GetString([System.Convert]::FromBase64String($Env:CI_SCRIPT)) | cmd /Q"
           ],
           "volumes": [
-            "pipeline_default:c:\\go"
+            "pipeline_default:c:/test"
           ],
           "networks": [
             {

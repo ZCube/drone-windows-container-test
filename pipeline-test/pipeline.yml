@@ -1,5 +1,5 @@
 workspace:
-  base: c:\go
+  base: "c:/test"
   path: src/github.com/drone/envsubst
 
 clone:
@@ -11,5 +11,4 @@ pipeline:
   build:
     image: some_docker
     commands:
-      - dir
-      - ls
+      - dir /al c:\
