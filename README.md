@@ -1,7 +1,9 @@
 * Run
+~~~
 build-dockers.bat
 cd pipeline-test
 test.bat
+~~~
 
 * Result
 ~~~
