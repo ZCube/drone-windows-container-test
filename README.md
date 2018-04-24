@@ -16,19 +16,87 @@ From https://github.com/drone/envsubst
 + git submodule update --init --recursive
 proc "pipeline_clone_0" exited with status 0
 proc "pipeline_step_0" started
-Microsoft Windows [Version 10.0.14393]
-(c) 2016 Microsoft Corporation. All rights reserved.
-"dir /al c:\\"
++ "cd c:\\root"
++ "mkdir c:\\root\\test"
 
- Volume in drive C has no label.
- Volume Serial Number is 047C-45B9
 
- Directory of c:\
+    Directory: C:\root
 
-11/23/2016  07:56 AM    <JUNCTION>     Documents and Settings [C:\Users]
-04/22/2018  07:48 PM    <SYMLINKD>     test [\\?\ContainerMappedDirectories\BCE640BE-200C-4B79-A40E-AADDCD900C90]
-               0 File(s)              0 bytes
-               2 Dir(s)  128,530,554,880 bytes free
 
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        4/24/2018   8:08 PM                test
++ "dir"
+d-----        4/24/2018   8:08 PM                test
++ "ls"
+d-----        4/24/2018   8:08 PM                test
++ "cd c:\\"
++ "dir"
+
+
+    Directory: C:\
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         3/5/2018   4:42 AM                PerfLogs
+d-r---        4/24/2018   8:08 PM                Program Files
+d-----        7/16/2016  10:18 PM                Program Files (x86)
+d-----        4/24/2018   8:08 PM                root
+d----l        4/24/2018   8:08 PM                test
+d-r---         3/5/2018   4:54 AM                Users
+d-----         3/5/2018   4:52 AM                Windows
+-a----       11/23/2016   7:45 AM           1894 License.txt
++ "ls"
+d-----         3/5/2018   4:42 AM                PerfLogs
+d-r---        4/24/2018   8:08 PM                Program Files
+d-----        7/16/2016  10:18 PM                Program Files (x86)
+d-----        4/24/2018   8:08 PM                root
+d----l        4/24/2018   8:08 PM                test
+d-r---         3/5/2018   4:54 AM                Users
+d-----         3/5/2018   4:52 AM                Windows
+-a----       11/23/2016   7:45 AM           1894 License.txt
++ "dir c:\\test"
+
+
+    Directory: C:\test
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        4/24/2018   8:08 PM                src
++ "ls c:\\test"
+d-----        4/24/2018   8:08 PM                src
++ "dir c:\\test\\src\\github.com\\drone\\envsubst"
+
+
+    Directory: C:\test\src\github.com\drone\envsubst
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----        4/24/2018   8:08 PM                parse
+-a----        4/24/2018   8:08 PM            185 .drone.yml
+-a----        4/24/2018   8:08 PM            519 eval.go
+-a----        4/24/2018   8:08 PM           4289 eval_test.go
+-a----        4/24/2018   8:08 PM           4186 funcs.go
+-a----        4/24/2018   8:08 PM           1587 funcs_test.go
+-a----        4/24/2018   8:08 PM           1086 LICENSE
+-a----        4/24/2018   8:08 PM            736 README
+-a----        4/24/2018   8:08 PM           3372 template.go
+-a----        4/24/2018   8:08 PM             18 template_test.go
++ "ls c:\\test\\src\\github.com\\drone\\envsubst"
+d-----        4/24/2018   8:08 PM                parse
+-a----        4/24/2018   8:08 PM            185 .drone.yml
+-a----        4/24/2018   8:08 PM            519 eval.go
+-a----        4/24/2018   8:08 PM           4289 eval_test.go
+-a----        4/24/2018   8:08 PM           4186 funcs.go
+-a----        4/24/2018   8:08 PM           1587 funcs_test.go
+-a----        4/24/2018   8:08 PM           1086 LICENSE
+-a----        4/24/2018   8:08 PM            736 README
+-a----        4/24/2018   8:08 PM           3372 template.go
+-a----        4/24/2018   8:08 PM             18 template_test.go
 proc "pipeline_step_0" exited with status 0
+
+
 E:\Workspace\asdf\drone-windows-container-test\pipeline-test>

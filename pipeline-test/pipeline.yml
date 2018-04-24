@@ -11,4 +11,14 @@ pipeline:
   build:
     image: some_docker
     commands:
-      - dir /al c:\
+      - cd c:\root
+      - mkdir c:\root\test
+      - dir
+      - ls
+      - cd c:\
+      - dir
+      - ls
+      - dir c:\test
+      - ls c:\test
+      - dir c:\test\src\github.com\drone\envsubst
+      - ls c:\test\src\github.com\drone\envsubst
