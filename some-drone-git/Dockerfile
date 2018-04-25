@@ -16,11 +16,24 @@ RUN powershell.exe [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityPr
     setx /m PATH "%PATH%;C:\Git\cmd"
 
 RUN powershell.exe [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12 ; \
-    Invoke-WebRequest "https://zcube.kr/git-%GIT_VERSION%-win-container-patch.zip" \
-    -OutFile git-%GIT_VERSION%-win-container-patch.zip -UseBasicParsing ; \
-    Expand-Archive 'git-%GIT_VERSION%-win-container-patch.zip' -DestinationPath "C:\Git\mingw64" -Force ; \
-    Remove-Item .\git-%GIT_VERSION%-win-container-patch.zip
-    
+    Invoke-WebRequest "https://wingit.blob.core.windows.net/files/MinGit-prerelease-2.17.0.windows.1.36.gdf4ca5fb72-64-bit.zip" \
+    -OutFile MinGit-prerelease-2.17.0.windows.1.36.gdf4ca5fb72-64-bit.zip -UseBasicParsing ; \
+    Expand-Archive 'MinGit-prerelease-2.17.0.windows.1.36.gdf4ca5fb72-64-bit.zip' -DestinationPath "c:/Git2" -Force ; \
+    Remove-Item .\MinGit-prerelease-2.17.0.windows.1.36.gdf4ca5fb72-64-bit.zip
+
+RUN copy /y "C:\Git2\mingw64\bin\git.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-credential-store.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-fast-import.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-http-fetch.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-http-push.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-remote-http.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-remote-https.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-sh-i18n--envsubst.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-show-index.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-upload-pack.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-remote-http.exe" "C:\Git\mingw64\bin\" && \
+    copy /y "C:\Git2\mingw64\bin\git-receive-pack.exe" "C:\Git\mingw64\bin\"
+
 # volume test
 VOLUME "C:\\code"
 RUN powershell.exe set-itemproperty -path \
