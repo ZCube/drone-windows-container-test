@@ -36,11 +36,11 @@ proc "pipeline_step_0" started
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
-d-----        4/26/2018  12:41 AM                test
+d-----        4/26/2018   9:36 PM                test
 + "dir"
-d-----        4/26/2018  12:41 AM                test
+d-----        4/26/2018   9:36 PM                test
 + "ls"
-d-----        4/26/2018  12:41 AM                test
+d-----        4/26/2018   9:36 PM                test
 + "cd c:\\"
 + "dir"
 
@@ -51,19 +51,19 @@ d-----        4/26/2018  12:41 AM                test
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
 d-----         3/5/2018   4:42 AM                PerfLogs
-d-r---        4/26/2018  12:41 AM                Program Files
+d-r---        4/26/2018   9:36 PM                Program Files
 d-----        7/16/2016  10:18 PM                Program Files (x86)
-d-----        4/26/2018  12:41 AM                root
-d----l        4/26/2018  12:41 AM                test
+d-----        4/26/2018   9:36 PM                root
+d----l        4/26/2018   9:36 PM                test
 d-r---         3/5/2018   4:54 AM                Users
 d-----         3/5/2018   4:52 AM                Windows
 -a----       11/23/2016   7:45 AM           1894 License.txt
 + "ls"
 d-----         3/5/2018   4:42 AM                PerfLogs
-d-r---        4/26/2018  12:41 AM                Program Files
+d-r---        4/26/2018   9:36 PM                Program Files
 d-----        7/16/2016  10:18 PM                Program Files (x86)
-d-----        4/26/2018  12:41 AM                root
-d----l        4/26/2018  12:41 AM                test
+d-----        4/26/2018   9:36 PM                root
+d----l        4/26/2018   9:36 PM                test
 d-r---         3/5/2018   4:54 AM                Users
 d-----         3/5/2018   4:52 AM                Windows
 -a----       11/23/2016   7:45 AM           1894 License.txt
@@ -75,9 +75,9 @@ d-----         3/5/2018   4:52 AM                Windows
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
-d-----        4/26/2018  12:41 AM                src
+d-----        4/26/2018   9:36 PM                src
 + "ls c:\\test"
-d-----        4/26/2018  12:41 AM                src
+d-----        4/26/2018   9:36 PM                src
 + "dir c:\\test\\src\\github.com\\drone\\envsubst"
 
 
@@ -86,27 +86,27 @@ d-----        4/26/2018  12:41 AM                src
 
 Mode                LastWriteTime         Length Name
 ----                -------------         ------ ----
-d-----        4/26/2018  12:41 AM                parse
--a----        4/26/2018  12:41 AM            185 .drone.yml
--a----        4/26/2018  12:41 AM            519 eval.go
--a----        4/26/2018  12:41 AM           4289 eval_test.go
--a----        4/26/2018  12:41 AM           4186 funcs.go
--a----        4/26/2018  12:41 AM           1587 funcs_test.go
--a----        4/26/2018  12:41 AM           1086 LICENSE
--a----        4/26/2018  12:41 AM            736 README
--a----        4/26/2018  12:41 AM           3372 template.go
--a----        4/26/2018  12:41 AM             18 template_test.go
+d-----        4/26/2018   9:36 PM                parse
+-a----        4/26/2018   9:36 PM            185 .drone.yml
+-a----        4/26/2018   9:36 PM            519 eval.go
+-a----        4/26/2018   9:36 PM           4289 eval_test.go
+-a----        4/26/2018   9:36 PM           4186 funcs.go
+-a----        4/26/2018   9:36 PM           1587 funcs_test.go
+-a----        4/26/2018   9:36 PM           1086 LICENSE
+-a----        4/26/2018   9:36 PM            736 README
+-a----        4/26/2018   9:36 PM           3372 template.go
+-a----        4/26/2018   9:36 PM             18 template_test.go
 + "ls c:\\test\\src\\github.com\\drone\\envsubst"
-d-----        4/26/2018  12:41 AM                parse
--a----        4/26/2018  12:41 AM            185 .drone.yml
--a----        4/26/2018  12:41 AM            519 eval.go
--a----        4/26/2018  12:41 AM           4289 eval_test.go
--a----        4/26/2018  12:41 AM           4186 funcs.go
--a----        4/26/2018  12:41 AM           1587 funcs_test.go
--a----        4/26/2018  12:41 AM           1086 LICENSE
--a----        4/26/2018  12:41 AM            736 README
--a----        4/26/2018  12:41 AM           3372 template.go
--a----        4/26/2018  12:41 AM             18 template_test.go
+d-----        4/26/2018   9:36 PM                parse
+-a----        4/26/2018   9:36 PM            185 .drone.yml
+-a----        4/26/2018   9:36 PM            519 eval.go
+-a----        4/26/2018   9:36 PM           4289 eval_test.go
+-a----        4/26/2018   9:36 PM           4186 funcs.go
+-a----        4/26/2018   9:36 PM           1587 funcs_test.go
+-a----        4/26/2018   9:36 PM           1086 LICENSE
+-a----        4/26/2018   9:36 PM            736 README
+-a----        4/26/2018   9:36 PM           3372 template.go
+-a----        4/26/2018   9:36 PM             18 template_test.go
 
 
 proc "pipeline_step_0" exited with status 0
